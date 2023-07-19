@@ -1,0 +1,113 @@
+.botpos{
+    position: fixed;
+    width: 20rem;
+    background: #777;
+    bottom: 40px;
+    right: 50px;
+    z-index: 1000;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    line-height: 15px;
+    overflow: hidden;
+  }
+
+.chatbot__header{
+    height: 3rem;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chatbot__header--text{
+    color: #fff;
+    text-align: left;
+    padding: 0.9rem;
+    margin: 0;
+
+}
+
+.chatbot__header--btn{
+    border: none;
+    background-color: transparent;
+    color: red;
+    padding: 0 0 0 5;
+    cursor: pointer;
+}
+
+.chatbot__body{
+    height: 19rem;
+    background-color: #fff;
+    margin: 0.2rem;
+    border-radius: 5px;
+    padding: 0.4rem;
+    overflow-y: scroll;
+}
+
+.chatbot__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #000;
+    padding: 2px;
+}
+.chatbot__footer--input{
+    width: 80%;
+    height: 2rem;
+    border-radius: 8px;
+}
+.chatbot__footer--btn{
+    width: 20%;
+    height: 2rem;
+    border: none;
+    color: rgb(168, 168, 168);
+    background-color: rgb(230, 230, 230);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.chatbot__footer--btn:hover{
+    color: #000;
+}
+.messages{
+    color: #000;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    background: -webkit-gradient(linear,left top,left bottom, from(#777),to(#777));
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),inset -2px -2px -2px rgba(0, 0, 0, 0.25);
+}
+
+.messages__user{
+    display: flex;
+    justify-content: end;
+}
+
+.messages__df{
+    display: flex;
+    justify-content: start;
+}
+
+.messages__text-user{
+    padding: .5rem .5rem;
+    background-color: rgb(190, 190, 190);
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+
+}
+
+.messages__text-df{
+    padding: .5rem .5rem;
+    color: #fff;
+    background-color: rgb(128, 128, 128);
+    border-top-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+
+}
